@@ -1,0 +1,601 @@
+/* ==========================================================================
+   Service Page Specific Styles
+   ========================================================================== */
+
+.service-hero {
+    background: linear-gradient(135deg, #ff1e00 0%, #ff0000 50%, #ff1414 100%);
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(235, 25, 25, 0.4) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(233, 53, 53, 0.4) 0%, transparent 50%),
+        linear-gradient(135deg, #ff0000 0%, #ff3300 50%, #ff0000 100%);
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.service-hero p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.service-hero .breadcrumb-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.service-hero .breadcrumb-btn {
+    background-color: white;
+    color: #333;
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-hero .breadcrumb-btn:hover {
+    transform: scale(1.05);
+    background-color: #f8f8f8;
+}
+
+/* Professional Repair Services Section Wrapper to match red section alignment */
+
+.bg-primary-red {
+    background-color: #000000;
+    /* Pure red background */
+    color: #000000;
+}
+
+.bg-light-gray {
+    background-color: #050404;
+    color: #ffffff;
+}
+
+.bg-light-gray .services-title {
+    color: #ffffff;
+}
+
+.bg-light-gray .services-desc {
+    color: #ffffff;
+}
+
+.bg-light-gray .service-list li {
+    color: #ffffff;
+}
+
+.bg-light-gray .contact-text-main span,
+.bg-light-gray .contact-text-main strong {
+    color: #ffffff;
+}
+
+.bg-light-gray .icon-circle-main {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.bg-light-gray .btn-book-dark {
+    background-color: #ff1515;
+    color: #ffffff;
+}
+
+.bg-primary-red .services-title {
+    color: #ffffff;
+}
+
+.bg-primary-red .services-desc {
+    color: #ffffff;
+}
+
+.bg-primary-red .service-list li {
+    color: #ffffff;
+}
+
+.bg-primary-red .service-list li i {
+    color: #ffffff;
+    /* Black icons on red background */
+}
+
+.bg-primary-red .btn-book-dark {
+    background-color: #ff1515;
+    color: #ffffff;
+}
+
+.bg-primary-red .btn-book-dark:hover {
+    background-color: #333333;
+}
+
+.bg-primary-red .contact-text-main span {
+    color: #ffffff;
+}
+
+.bg-primary-red .contact-text-main strong {
+    color: #ffffff;
+}
+
+.bg-primary-red .icon-circle-main {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.repair-services {
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+
+.services-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.services-flex.reversed {
+    flex-direction: row-reverse;
+}
+
+.services-content {
+    flex: 1.2;
+}
+
+.services-visual {
+    flex: 1;
+}
+
+.services-visual img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.services-title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.services-desc {
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 30px;
+    max-width: 650px;
+}
+
+.services-grid {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.service-list li i {
+    color: #28a745;
+    /* Vibrant green to match screenshot */
+    font-size: 20px;
+}
+
+.services-cta {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.btn-book-dark {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 16px 45px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-book-dark:hover {
+    background-color: #333;
+}
+
+.support-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-circle-main {
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+.contact-text-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text-main span {
+    font-size: 13px;
+    color: #777;
+}
+
+.contact-text-main strong {
+    font-size: 19px;
+    color: #1a1a1a;
+    letter-spacing: 0.5px;
+}
+
+/* Seeking Service Support Section */
+.service-support-section {
+    background-color: #ff2c2c;
+    /* Dark navy background */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.support-main-title {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.support-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+}
+
+.support-icon-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.icon-whatsapp {
+    background-color: #e8f9ed;
+    color: #25d366;
+}
+
+.icon-phone {
+    background-color: #eeefff;
+    color: #3f51b5;
+}
+
+.icon-location {
+    background-color: #fff8e6;
+    color: #ffa000;
+}
+
+.support-card h3 {
+    font-size: 22px;
+    color: #1a1a1a;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.support-card p,
+.support-card a {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.support-card.location-card {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.support-card.location-card p {
+    color: #444;
+}
+
+.support-card.location-card h3 {
+    color: #1a1a1a;
+}
+
+.support-card .phone-line a {
+    text-decoration: none;
+    color: #444;
+    transition: color 0.3s ease;
+}
+
+.support-card .phone-line a:hover {
+    color: #3f51b5;
+    text-decoration: underline;
+}
+
+/* Seamless Service Steps Section */
+.service-steps-section {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.steps-main-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 60px;
+}
+
+.steps-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+}
+
+.step-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.step-item:hover .step-number {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.step-arrow {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    font-size: 20px;
+    color: #999;
+}
+
+.step-item:last-child .step-arrow {
+    display: none;
+}
+
+.step-item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.step-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    max-width: 240px;
+}
+
+.steps-footer-bar {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f2f2f2;
+    padding: 18px 45px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.steps-footer-bar i {
+    font-size: 22px;
+    color: #1a1a1a;
+}
+
+.steps-footer-bar span {
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.steps-footer-bar a {
+    color: #1a1a1a;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .services-flex {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .services-flex.reversed {
+        flex-direction: column !important;
+    }
+
+    .services-visual {
+        width: 100%;
+        max-width: 500px;
+        order: -1;
+    }
+
+    .services-grid {
+        justify-content: center;
+        text-align: left;
+        gap: 20px;
+        margin: 0 auto 30px;
+        width: fit-content;
+    }
+
+    .services-cta {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .support-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .steps-flex {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .step-item {
+        flex: 1 1 40%;
+    }
+
+    .step-arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero {
+        padding: 50px 20px;
+    }
+
+    .service-hero h1 {
+        font-size: 34px;
+    }
+
+    .service-hero p {
+        font-size: 1rem;
+    }
+
+    .services-title {
+        font-size: 26px;
+    }
+
+    .services-desc {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .support-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .support-main-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .repair-services {
+        padding: 40px 20px;
+    }
+
+    .steps-main-title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .service-steps-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .step-item {
+        flex: 1 1 100%;
+    }
+
+    .steps-footer-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .btn-book-dark {
+        width: 100%;
+        text-align: center;
+        padding: 14px 30px;
+    }
+
+    .breadcrumb-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GoBright</title>
+    <!-- TikTok Sans Font -->
+    <link href="https://fonts.cdnfonts.com/css/tiktok-sans" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="sales.css">
+    <!-- Contact Specific Styles -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="container navbar-content">
+                <div class="logo-section">
+                    <a href="index.html" class="logo-link">
+                        <img src="navfooter/images/logo-1.png" alt="GoBright Logo" class="brand-logo">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn-enquire">Enquire Now</a>
+                </div>
+                <button class="mobile-menu-toggle" id="openMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu-overlay" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <button class="mobile-menu-close" id="closeMenu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="mobile-logo">
+                        <img src="navfooter/images/logo-1.png" alt="GoBright Logo">
+                    </div>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sales.html">Sales</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="mobile-nav-cta">
+                        <a href="contact.html" class="btn-enquire">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="container hero-content">
+                <h1>Get In Touch</h1>
+                <p>We're here to provide expert consultation and professional support for all your technology needs.</p>
+                <div class="breadcrumb-wrapper">
+                    <div class="breadcrumb-pill">
+                        <a href="index.html">Home</a> <span> / Contact Us</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section: Map & Form -->
+        <section class="contact-connect-section">
+            <div class="container contact-flex-layout">
+                <!-- Left Side: Content & Map -->
+                <div class="contact-left-content">
+                    <div class="brand-tag-wrapper">
+                        <span class="brand-line"></span>
+                        <span class="brand-tag">Tech.GoBright</span>
+                    </div>
+                    <h2 class="connect-title">Tailored Solutions for Your Business & Home</h2>
+                    <p class="connect-desc">
+                        Have a specific requirement or need expert technical advice? Our team is dedicated to providing efficient solutions and reliable support. Reach out to us for a seamless technology experience.
+                    </p>
+                    <div class="map-container-inner">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.917!2d78.6800!3d10.8220!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf5d9bcffb7e7%3A0xb301280f35b47dbf!2sGoBright%20%7C%20Branding%20%26%20Digital%20Marketing%20Agency%2C%20Trichy!5e0!3m2!1sen!2sin!4v1741705500000!5m2!1sen!2sin"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Right Side: Form Card -->
+                <div class="contact-right-form">
+                    <div class="form-card">
+                        <div class="form-card-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="form-pre-title">Need Assistance?</span>
+                        <h3 class="form-main-title">Request a Consultation</h3>
+
+                        <form id="contactForm" class="new-contact-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label>Name<span class="req">*</span></label>
+                                    <input type="text" id="contactName" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email address<span class="req">*</span></label>
+                                    <input type="email" id="contactEmail" placeholder="Enter your email address"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Mobile Number<span class="req">*</span></label>
+                                    <input type="tel" id="contactMobile" placeholder="Enter your mobile number"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Location<span class="req">*</span></label>
+                                    <input type="text" id="contactLocation" placeholder="Enter your location" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label>Subject<span class="req">*</span></label>
+                                <input type="text" id="contactSubject" placeholder="Enter your Subject" required>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label>Message/Questions</label>
+                                <textarea id="contactMessage" rows="4" placeholder="Enter Your Requirement"></textarea>
+                            </div>
+
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="authorize" required>
+                                <label for="authorize">I authorize GoBright to contact me.</label>
+                            </div>
+
+                            <button type="submit" class="btn-form-submit">Submit</button>
+                            <p id="contactStatusMessage" style="margin-top: 15px; font-weight: bold;"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seeking Service Support? Section -->
+        <section class="contact-support-section">
+            <div class="container">
+                <h2 class="support-main-title">Need Immediate Assistance?</h2>
+                <div class="support-grid">
+                    <!-- WhatsApp Card -->
+                    <div class="support-card" onclick="window.open('https://wa.me/919842444279', '_blank')"
+                        style="cursor: pointer;">
+                        <div class="support-icon-box icon-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3>Instant Support via WhatsApp</h3>
+                        <a href="https://wa.me/919842444279" target="_blank">Click here to chat</a>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="support-card">
+                        <div class="support-icon-box icon-phone">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <h3>Support on Phone</h3>
+                        <p class="phone-line">
+                            <a href="tel:+919500131232">+91 95001 31232</a> | <a href="tel:+918925550778">+91 89255 50778</a>
+                        </p>
+                        <p class="phone-line">
+                            
+                        </p>
+                    </div>
+
+                    <!-- Location Card -->
+                    <a href="https://maps.app.goo.gl/kyb5aBPPwvh77MGk9"
+                        target="_blank" class="support-card location-card">
+                        <div class="support-icon-box icon-location">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                        </div>
+                        <h3>Visit Our Experience Centre</h3>
+                         Paradise Towers complex,<br>No.52/B,First Floor,<br>Thennur High Road,<br>Tennur, Tiruchirappalli,<br> Tamil Nadu 620017.
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-section brand-info">
+                <div class="footer-logo">
+                    <img src="navfooter/images/logo-1.png" alt="GoBright Logo" class="footer-brand-logo">
+                </div>
+                <p class="brand-desc">
+                    Enhancing your digital life with powerful hardware, reliable security systems, and expert technical support to keep your home and business running smoothly.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/tech.gobright?igsh=ajE1dDd4bTdqbjZh&utm_source=qr" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Tech.GoBright/" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gobright.growth@gmail.com" target="_blank" class="social-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Essential Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home <i class="fa-solid fa-arrow-up-right"></i></a></li>
+                    <li><a href="about.html">About Us <i class="fa-solid fa-arrow-up-right"></i></a></li>
+                    <li><a href="contact.html">Contact Us <i class="fa-solid fa-arrow-up-right"></i></a></li>
+                    <li><a href="#">Privacy Policy <i class="fa-solid fa-arrow-up-right"></i></a></li>
+            
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>What We Offer</h3>
+                <ul class="footer-links">
+                    <li><a href="sales.html">Sales <i class="fa-solid fa-arrow-up-right"></i></a></li>
+                    <li><a href="service.html">Service <i class="fa-solid fa-arrow-up-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fa-solid fa-phone-volume"></i> Get in Touch</h3>
+                <ul class="contact-list">
+                    <li><a href="tel:+919500131232">+91 95001 31232</a></li>
+                    <li><a href="tel:+918925550778">+91 89255 50778</a></li>
+                </ul>
+            </div>
+            <div class="footer-section location-info">
+                <h3><a href="https://www.google.com/maps/place/Paradise+Towers+complex/@10.8232117,78.6806547,17z"
+                        target="_blank" style="color: inherit; text-decoration: none;"><i
+                            class="fa-solid fa-location-dot"></i> Visit Our Store</a></h3>
+                <p class="address">
+                 Paradise Towers complex,<br>No.52/B,First Floor,<br>Thennur High Road,<br>Tennur, Tiruchirappalli,<br> Tamil Nadu 620017.
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>©Copyrights 2026<strong>GoBright</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Contact.js"></script>
+</body>
+
+</html>

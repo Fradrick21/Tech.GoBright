@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Only Carousel</title>
+  <link href="https://fonts.cdnfonts.com/css/tiktok-sans" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main Styles -->
+  <link rel="stylesheet" href="./Index.css?v=12">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="main-header">
+        <nav class="navbar">
+            <div class="container navbar-content">
+                <div class="logo-section">
+                    <a href="index.html" class="logo-link">
+                        <img src="navfooter/images/logo-1.png" alt="GoBright Logo" class="brand-logo">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn-enquire">Enquire Now</a>
+                </div>
+                <button class="mobile-menu-toggle" id="openMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu-overlay" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <button class="mobile-menu-close" id="closeMenu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="mobile-logo">
+                        <img src="navfooter/images/logo-1.png" alt="GoBright Logo">
+                    </div>
+                    <ul class="mobile-nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sales.html">Sales</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="mobile-nav-cta">
+                        <a href="contact.html" class="btn-enquire">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-carousel" aria-label="Hero Carousel">
+    <input type="radio" id="slide-1" name="hero" checked />
+    <input type="radio" id="slide-2" name="hero" />
+    <input type="radio" id="slide-3" name="hero" />
+
+    <div class="slides">
+      <article class="slide" style="--slide-bg: url('./Image/C1.png');">
+        <img src="./image/Artboard 1.png" alt="Slide 1" />
+      </article>
+      <article class="slide" style="--slide-bg: url('./Image/C1.png');">
+        <img src="./image/Artboard 2.png" alt="Slide 2" />
+      </article>
+      <article class="slide" style="--slide-bg: url('./Image/C1.png');">
+        <img src="./image/Artboard 3.png" alt="Slide 3" />
+      </article>
+    </div>
+
+    <div class="nav-set nav-1">
+      <label class="arrow left" for="slide-3" aria-label="Previous"></label>
+      <label class="arrow right" for="slide-2" aria-label="Next"></label>
+    </div>
+    <div class="nav-set nav-2">
+      <label class="arrow left" for="slide-1" aria-label="Previous"></label>
+      <label class="arrow right" for="slide-3" aria-label="Next"></label>
+    </div>
+    <div class="nav-set nav-3">
+      <label class="arrow left" for="slide-2" aria-label="Previous"></label>
+      <label class="arrow right" for="slide-1" aria-label="Next"></label>
+    </div>
+
+    <div class="controls" aria-label="Slide Dots">
+      <label for="slide-1"></label>
+      <label for="slide-2"></label>
+      <label for="slide-3"></label>
+    </div>
+    <p class="swipe-hint">Swipe to view more</p>
+  </section>
+
+  <!-- content -->
+   <p class="intro-copy">Tech.GoBright is a leading provider of IT hardware,<br>CCTV security systems, networking solutions and business technology services.</p>
+
+  <!-- Products-1 -->
+  <section class="promo-section" aria-label="Featured Promotions">
+    <div class="promo-wrap">
+      <article class="promo-card promo-laptop">
+        <div class="promo-copy">
+          <h3>Smart Laptops for Modern Work</h3>
+          <p>Powerful performance, sleek design, and reliable speed for work, study, and everyday productivity.</p>
+        </div>
+        <img src="./Image/mini-banner-laptop.webp" alt="Laptop Promotion">
+      </article>
+
+      <div class="promo-middle">
+        <article class="promo-card promo-cctv">
+          <div class="promo-copy">
+            <h3>Secure What Matters Most
+            Modern CCTV technology delivering safety, control, and peace of mind.</h3>
+          </div>
+          <img src="./Image/small-cctv.webp" alt="CCTV Promotion">
+        </article>
+
+        <article class="promo-card promo-printer">
+          <div class="promo-copy">
+            <h3>Professional Printing Technology
+            Smooth printing performance with minimal maintenance and maximum productivity.</h3>
+          </div>
+          <img src="./Image/small-printer.webp" alt="Printer Promotion">
+        </article>
+      </div>
+
+      <article class="promo-card promo-desktop">
+        <div class="promo-copy">
+          <h3>Custom PC Build Solutions</h3>
+          <p>High-performance desktops tailored for business, gaming, and professional work<p>
+        </div>
+        <img src="./Image/small-desktop.webp" alt="Desktop Promotion">
+      </article>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services-section" aria-label="What We Do">
+    <div class="services-wrap">
+      <h2>Our Best IT Services & Solutions</h2>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <img src="./Image/laptop-service.webp" alt="Professional Laptop Repair Services">
+          <h3>Laptop Repair Services</h3>
+          <p>Tech.GoBright provides industry-leading laptop diagnostic and repair services. From intricate motherboard repairs to performance upgrades, our technicians ensure peak efficiency for all major brands.</p>
+          <a href="contact.html" class="service-btn">Get Support</a>
+        </article>
+
+        <article class="service-card">
+          <img src="./Image/desktop-repair.webp" alt="Reliable Desktop Repairs Service">
+          <h3>Desktop Computer Repair</h3>
+          <p>We offer comprehensive desktop troubleshooting and performance optimization designed for stability and speed. Our experts specialize in complex hardware repairs and custom system configurations.</p>
+          <a href="contact.html" class="service-btn">Get Support</a>
+        </article>
+
+        <article class="service-card">
+          <img src="./Image/printer-repair.webp" alt="Expert Printer Repair Service">
+          <h3>Printer Repair & Maintenance</h3>
+          <p>Keep your workflow uninterrupted with specialized printer maintenance and technical support. We ensure your imaging equipment delivers consistent, high-quality results across all models.</p>
+          <a href="contact.html" class="service-btn">Get Support</a>
+        </article>
+
+        <article class="service-card">
+          <img src="./Image/cctv-repair.webp" alt="Advanced CCTV Installation Service">
+          <h3>CCTV Installation & Repair Services</h3>
+          <p>Protect what matters most with professional security infrastructure services. We design and implement robust surveillance solutions with expert installation and maintenance for every environment.</p>
+          <a href="contact.html" class="service-btn">Get Support</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  
+  <!-- Team -->
+  <section class="team-section" aria-label="Our Team">
+    <div class="team-wrap">
+      <div class="team-heading">
+        <h2>Meet the Experts Behind GoBright</h2>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-photo">
+            <img src="./image/srithar brow (1).png" alt="Arun Kumar, Technical Specialist">
+          </div>
+          <div class="team-card-body">
+            <h3>Sridhar</h3>
+            <p class="team-role">IT Head</p>
+            <p class="team-bio">
+              Responsible for handling project management activities from initiation to closure.
+            </p>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-photo">
+            <img src="./image/vignesh annan.png" alt="Priya Nair, Customer Solutions Manager">
+          </div>
+          <div class="team-card-body">
+            <h3>Vignesh</h3>
+            <p class="team-role">Customer Solutions Manager</p>
+            <p class="team-bio">
+              Focuses on CCTV, printers, and client support, ensuring every customer gets the right product and dependable after-sales service.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer Section (from footer.html) -->
+  <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-section brand-info">
+                <div class="footer-logo">
+                    <img src="navfooter/images/logo-1.png" alt="GoBright Logo" class="footer-brand-logo">
+
+                </div>
+                <p class="brand-desc">
+                    Your trusted destination for top-quality computers, laptops, CCTV, printers, accessories, and expert
+                    repair services.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/tech.gobright?igsh=ajE1dDd4bTdqbjZh&utm_source=qr" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Tech.GoBright/" target="_blank" class="social-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gobright.growth@gmail.com" target="_blank" class="social-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Essential Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home <i class="fa-solid fa-arrow-up-right"></i></a></li>
+                    <li><a href="about.html">About Us <i class="fa-solid fa-arrow-up-right"></i></a></li>
+                    <li><a href="contact.html">Contact Us <i class="fa-solid fa-arrow-up-right"></i></a></li>
+                    <li><a href="#">Privacy Policy <i class="fa-solid fa-arrow-up-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>What We Offer</h3>
+                <ul class="footer-links">
+                    <li><a href="sales.html">Sales <i class="fa-solid fa-arrow-up-right"></i></a></li>
+                    <li><a href="service.html">Service <i class="fa-solid fa-arrow-up-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fa-solid fa-phone-volume"></i> Get in Touch</h3>
+                <ul class="contact-list">
+                    <li><a href="tel:+919500131232">+91 95001 31232</a></li>
+                    <li><a href="tel:+918925550778">+91 89255 50778</a></li>
+                </ul>
+            </div>
+            <div class="footer-section location-info">
+                <h3><a href="https://www.google.com/maps/place/GoBright+%7C+Branding+%26+Digital+Marketing/@10.8231923,78.685817,17z/data=!3m1!4b1!4m6!3m5!1s0x3baaf5003b540201:0x51724f114092b7c4!8m2!3d10.8231923!4d78.685817!16s%2Fg%2F11w276_kvw"
+                        target="_blank" style="color: inherit; text-decoration: none;"><i
+                            class="fa-solid fa-location-dot"></i> Visit Our Store</a></h3>
+                <p class="address">
+                    Paradise Towers complex,<br>No.52/B,First Floor,<br>Thennur High Road,<br>Tennur, Tiruchirappalli,<br> Tamil Nadu 620017.
+                </p>
+               
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>©Copyrights 2026<strong>GoBright</strong></p>
+            </div>
+        </div>
+  </footer>
+
+<script src="./Contact.js"></script>
+
+</body>
+</html>
